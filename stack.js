@@ -40,7 +40,7 @@ class Stack {
         return Array.from(Object.values(this.elements))
     }
 
-    fromIterable(iterable) {
+    static fromIterable(iterable) {
         if (!Array.isArray(iterable)) throw new Error('Неитерируемая сущность!')
         
         let resultStack = new Stack(iterable.length)
@@ -52,3 +52,5 @@ class Stack {
         return resultStack
     }
 }
+
+console.log(Stack.fromIterable([1,2,3,4]))
