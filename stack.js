@@ -43,7 +43,7 @@ class Stack {
     fromIterable(iterable) {
         if (!Array.isArray(iterable)) throw new Error('Неитерируемая сущность!')
         
-        let resultStack = new Stack(this.max)
+        let resultStack = new Stack(iterable.length)
 
         for (let item of iterable) { 
             resultStack.push(item)
