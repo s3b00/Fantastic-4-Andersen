@@ -37,7 +37,7 @@ class Stack {
     }
 
     toArray() { 
-        return Array.from(Object.values(this.elements))
+        return Array.from(Object.values(this.elements)).reverse()
     }
 
     static fromIterable(iterable) {
