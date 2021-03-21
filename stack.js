@@ -52,5 +52,3 @@ class Stack {
         return resultStack
     }
 }
-
-console.log(Stack.fromIterable([1,2,3,4]))
